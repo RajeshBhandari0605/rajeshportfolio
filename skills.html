@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+          <div class="logo">
+            <a href="#">Portfo<span>lio.</span></a>
+          </div>
+  
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    <div class="skills">
+        <h1>My Skills</h1>
+        <li>
+            <h3>HTML</h3><span class="bar"><span class="html"></span></span>
+        </li>
+        <li>
+            <h3>CSS</h3><span class="bar"><span class="css"></span></span>
+        </li>
+       <li>
+            <h3>JAVASCRIPT</h3><span class="bar"><span class="js"></span></span>
+        </li>
+        <li>
+            <h3>PYTHON</h3><span class="bar"><span class="python"></span></span>
+        </li>
+        <li>
+            <h3>.NET</h3><span class="bar"><span class="net"></span></span>
+        </li>
+
+    </div>
+    
+    <style>
+*{
+    font-family: sans-serif;
+    list-style: none;
+    padding:2px;
+}
+body{
+    background:black;
+}
+.skills{
+    width:500px;
+    margin:60px auto;
+    color:crimson;
+    padding:80px;
+}
+h1{
+          font-weight: normal;
+          font-size:35px;
+          position: relative;
+          margin:40px 0px;
+
+      }
+h1::before{
+          content: '';
+          position: absolute;
+          width: 100px;
+          height:3px;
+          background-color:crimson;
+          bottom:-10px;
+          left:20%;
+          transform: translateX(-50%);
+          animation: animate 4s linear infinite;
+      }
+      @keyframes animate {
+          0%{
+              width: 100px;
+          }
+          50%{
+              width: 200px;
+          }
+          100%{
+              width:100px;
+          }
+          
+      }
+.skills li{
+    margin: 20px 0;
+    color:white;
+}
+.bar{
+    background:black;
+    display:block;
+    height: 5px;
+    border:6px solid rgb(62, 62, 77);
+border-radius: 2px;
+overflow: hidden;
+/* box-shadow: 0 0 10px white; */
+}
+.bar span{
+    height:2px;
+    float:left;
+    background:white;
+
+}
+.html{
+    width:70%;
+    animation: html 2s;
+}
+.css{
+    width: 60%;
+    animation: css 2s;
+
+}
+.js{
+    width:35%;
+    animation: js 2s;
+
+}
+.python{
+    width:30%;
+    animation: python 2s;
+
+
+}
+.net{
+    width: 45%;
+    animation: net 2s;
+
+
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes net{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+
+
+
+    </style>
+</body>
+</html>

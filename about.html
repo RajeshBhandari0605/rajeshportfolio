@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      src = "https://code.jquery.com/jquery-3.6.0.min.js";
+      </script>
+        <link rel="Stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+          <div class="logo">
+            <a href="#">Portfo<span>lio.</span></a>
+          </div>
+  
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+     <!-- About Section Starts -->
+     <section class="about" id="about">
+        <div class="max-width">
+          <h2 class="title">About me</h2>
+          <div class="about-content">
+            <div class="column left">
+              <img src="Images/1.jpg" alt="" />
+            </div>
+            <div class="column right">
+              <div class="text">
+                I'm Rajesh and I'm a <span>Computer Engineer</span>
+              </div>
+              <p>
+                Upcoming BE graduate offering a strong foundation in software engineering and programming principals. Possessing exceptional analytical and problem solving skills and the important ability to function well both independently and in fast paced team environments.
+              </p>
+              <a href="file/Resume.pdf.pdf" download>Download Cv</a>
+             
+            </div>
+            
+            <style>
+                *{
+                    background-color:black;
+                }
+            section{
+                padding:100px 0;
+                background-color: black;
+            }
+            
+            .about{
+                font-family: 'Poppins',sans-serif;
+            }
+            .about .title{
+                position: relative;
+                font-family: 'Ubuntu',sans-serif;
+                text-align: center;
+                font-size: 40px;
+                font-weight: 500;
+                margin-bottom: 60px;
+                padding-bottom: 20px;
+                color: #fff;
+            }
+            .about .title::before{
+                content:'' ;
+                position: absolute;
+                width: 150px;
+                bottom: -10px;
+                left: 50%;
+                height:3px;
+                background:crimson;
+                transform: translateX(-50%);
+                animation: animate 4s linear infinite;
+            }
+            @keyframes animate {
+                0%{
+                    width: 100px;
+                }
+                50%{
+                    width: 200px;
+                }
+                100%{
+                    width:100px;
+                }
+                
+            }
+            .about .title::after{
+                content:"who i am" ;
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                padding: 5px;
+                font-size: 20px;
+                color: crimson;
+                transform: translateX(-50%);
+            }
+            .about .about-content{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .about .about-content .left{
+                width: 45px;
+            }
+            .about .about-content .right{
+                width: 45%;
+            }
+            .about .about-content .left img{
+            height: 400px;
+            width:400px;
+            object-fit: cover;
+            border-radius: 6px;
+            }
+            
+            .about .about-content .right .text{
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: #fff;
+            }
+            .about .about-content .right .text span{
+                color:crimson ;
+            }
+            .about .about-content .right p{
+                text-align: justify;
+            }
+            .about .about-content .right a{
+                display: inline-block;
+                background: crimson;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 1px 30px;
+                margin-top: 20px;
+                border-radius:6px;
+                border: 2px solid crimson;
+                transition: all 0.3s ease;
+            }
+            .about .about-content .right a:hover{
+                color:crimson;
+                background: none;
+            }
+            </style>
+</body>
+</html>
