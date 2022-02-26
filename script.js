@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 });
 
-//toggle meanu/navbar script
+//toggle meanu/navbar script hahjdhashdoiyewhdksnwlicdhwil  
 $('.menu-btn') .Click(function(){
     $('.navbar.menu') .toggleClass("active");
     $('.menu-btn i') .toggleClass("active");
